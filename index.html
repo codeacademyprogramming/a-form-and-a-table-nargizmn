@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Açılıb bağlanan - Özü özünü bağlayan -->
+    <!-- Opening and closing(html, head, body) - Self closing(meta) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="This website contains information about car advertisements">
+    <meta name="keywords" content="adversiment, car advertisements, brand new cars, cheap cars">
+    <meta name="author" content="agil atakishiyev, https://linkedin.com/in/agilatakishiyev">
+    <!-- internal styles -->
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table th {
+            border: 2px solid black;
+        }
+
+        table td {
+            border: 2px solid black;
+        }
+    </style>
+    <title>First HTML lecture</title>
+</head>
+
+<body style="height: 5000px;">
+    <!-- heading - h1 -->
+    <h1>Hello World</h1>
+
+    <p>
+        Hello World
+    </p>
+
+    <h2>Hello World</h2>
+
+    <h3>Hello World</h3>
+
+    <h4>Hello World</h4>
+
+    <h5>Hello World</h5>
+
+    <h6>Hello World</h6>
+
+    <!-- b - bold -->
+    <b>Ali Aghayev</b>
+    <!-- strong - strong -->
+    <strong>Ali Aghayev</strong>
+
+    <!-- i - italic -->
+    <i>Ali Aghayev</i>
+    <!-- em - emphasize -->
+    <em>Ali Aghayev</em>
+
+
+    <!-- Paragraph -->
+    <p>Qabil loves this lesson</p>
+    <p>Qabil really loves this lesson blah blah</p>
+    <!-- There are two types of Attributes - Global / Local  -->
+    <!-- <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-bmw-m5-cs-109-1611684117.jpg?crop=0.801xw:0.678xh;0.0337xw,0.188xh&resize=2048:*"
+        alt="" width="500" height="500"> -->
+    <img src="./assets/images/bmw.jpeg" alt="This is a fridge" width="400" height="400" title="This is a bmw car">
+
+    <!-- anchor -->
+    <a href="https://www.google.com/" target="_blank">This is a link to google</a>
+    <a href="https://www.duckduckgo.com" target="_blank">This is a link to google</a>
+
+    <!-- unordered list -->
+    <ul>
+        <!-- list item -->
+        <li>Kamil Mammadli</li>
+        <li>Ali Aghayev</li>
+        <li>Qabil Gurbanov</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol type="1">
+        <li>Iphone 7</li>
+        <li>Iphone 8</li>
+        <li>Iphone X</li>
+    </ol>
+
+    <table>
+        <caption>Students</caption>
+        <thead>
+            <!-- table row -->
+            <tr style="background-color: teal; color: white;">
+                <th>Group number</th>
+                <th>ID</th>
+                <th colspan="2">Fullname</th>
+                <th>Birthdate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- table definition -->
+                <td rowspan="2">P220</td>
+                <!-- inline style -->
+                <td style="background-color: red; color: white;">
+                    123
+                </td>
+                <td>
+                    Joe
+                </td>
+                <td>Bloggs</td>
+                <td>19-02-1999</td>
+            </tr>
+            <tr>
+                <td>
+                    124
+                </td>
+                <td>
+                    Arif
+                </td>
+                <td>V216</td>
+                <td>19-02-1971</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Break -->
+    <br>
+    <br>
+    <br>
+    <form autocomplete="off" novalidate>
+        <!-- 
+            {
+                firstname: "Fazil",
+                lastname: "Mustafa",
+                birthdate: "1999-11-11",
+                gender: "other",
+                range: 0 - 100 {54}
+            }
+         -->
+        <label for="firstname">Firstname</label>
+        <br>
+        <!-- id - "id"entifier - identifikator -->
+        <input type="text" id="firstname" placeholder="Type your firstname" required name="firstname">
+        <br>
+        <label for="lastname">Lastname</label>
+        <br>
+        <input type="text" id="lastname" placeholder="Type your lastname" required name="lastname">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" placeholder="Type your email" value="agil.atakishiyev@code.edu.az" name="email">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" placeholder="Type your password" name="password">
+        <br>
+        <label for="birthdate">Birthdate</label>
+        <br>
+        <input type="date" name="birthdate">
+        <br>
+        <label for="about-yourself">About yourself</label>
+        <br>
+        <textarea name="about-yourself" id="about-yourself" cols="30" rows="10"></textarea>
+        <br>
+        <label for="age-average">Age average</label>
+        <br>
+        <select name="age-average" id="age-average">
+            <option value="eighteen-to-twenty-five">18 - 25</option>
+            <option value="twenty-five-to-thirty-five">25 - 35</option>
+            <option value="thirty-five-to-fifty">35 - 50</option>
+        </select>
+        <br>
+        <label for="">Choose your hobbits</label>
+        <br>
+        <label for="music">Music</label>
+        <input type="checkbox" value="Music" name="music" id="music" checked>
+        <br>
+        <label for="sport">Sport</label>
+        <input type="checkbox" value="sport" name="sport" id="sport">
+        <br>
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" value="gaming" name="gaming" id="gaming">
+        <br>
+        <label>Gender</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" value="male" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" value="female" name="gender" id="female">
+        <label for="other">Other</label>
+        <input type="radio" value="other" name="gender" id="other">
+        <br>
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="0" max="100" value="75">
+        <button type="submit">Submit me</button>
+    </form>
+    <!-- Semantic -->
+    <header></header>
+    <aside></aside>
+    <main></main>
+    <footer></footer>
+    <!-- <video src=""></video> -->
+
+    <audio src="./assets/audio/arctic_monkeys.mp3" controls></audio>
+    <video src="./assets/videos/movie.mp4" controls autoplay muted></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bpOSxM0rNPM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <h1>4 <sup>2</sup></h1>
+    <h1>4 <sub>2</sub></h1>
+</body>
+
+</html>
